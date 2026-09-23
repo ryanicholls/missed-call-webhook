@@ -1,0 +1,18 @@
+{
+  "name": "missed-call-whatsapp-webhook",
+  "version": "1.0.0",
+  "description": "Twilio missed-call → WhatsApp via Kapso",
+  "type": "module",
+  "main": "missed-call-webhook.js",
+  "scripts": {
+    "dev": "node missed-call-webhook.js",
+    "start": "node missed-call-webhook.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.2"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
