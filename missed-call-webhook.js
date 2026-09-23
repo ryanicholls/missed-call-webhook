@@ -112,6 +112,10 @@ app.get('/health', (req, res) => {
  * Start server
  */
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Missed-call webhook listening on port ${PORT}`);
-});
+if (!process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`Missed-call webhook listening on port ${PORT}`);
+  });
+}
+
+export default app;
